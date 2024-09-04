@@ -1,0 +1,106 @@
+*{
+    font-family: sans-serif, Arial, Helvetica;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#portfolio{
+    background-color: #333333;
+    color: #00bcd4;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+nav{
+    background-color: #444444;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+#nav{
+    display: none;
+}
+#content{
+    background-color: #f3f3f3;
+}
+.box{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 6px;
+}
+.box .image{
+    display: flex;
+    align-items: center;
+}
+.box .image img{
+    width: 120px;
+}
+#home h2{
+    color: green;
+    text-align: center;
+}
+#education h2{
+    color: rgb(255, 41, 77);
+    text-align: center;
+}
+#projects h2{
+    color: gold;
+    text-align: center;
+}
+#skills h2{
+    color: rgb(255, 97, 255);
+    text-align: center;
+}
+#contact h2{
+    color: dodgerblue;
+    text-align: center;
+}
+.image+div p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width:700px){
+    nav{
+        display: none;
+    }
+    #nav{
+        display: contents;
+        background-color: #444444;
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    #nav select{
+        width: 100%;
+        margin: 10px;
+        background-color: #555555;
+        border-radius: 6px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .box .image{
+        justify-content: center;;
+    }
+}
